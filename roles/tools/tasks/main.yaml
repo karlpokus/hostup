@@ -1,0 +1,11 @@
+---
+
+- name: Install
+  become: true
+  apt:
+    name: "{{ packages }}"
+    update_cache: yes
+  vars:
+    packages:
+      - git
+      - openssl
