@@ -2,7 +2,6 @@
 
 - hosts: all
   name: install tools
-  remote_user: "{{ user }}"
   roles:
     - timezone
     - ufw
